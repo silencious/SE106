@@ -1,0 +1,123 @@
+// Name: Tian Jiahe
+// Student ID: 5130379056
+
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+
+using namespace std;
+
+struct node{
+	char key;
+	node* next;
+	node()
+		:key(0), next(NULL)
+	{}
+	~node(){
+		if(next != NULL)
+			delete next;
+	}
+};
+
+class HashTable{
+public:
+	HashTable(int b)
+		:b(b)
+	{
+		init();
+	}
+	~HashTable();
+
+	bool add(char);
+	void del(char);
+	bool check_once(char);
+private:
+	int b;
+	node** table;
+	void init();
+};
+
+HashTable::~HashTable(){
+	delete[] table;
+}
+
+bool HashTable::add(char ch){
+	int k = ch % b;
+	node* nd = table[k];
+	if(nd == NULL){cout << ch << endl;
+		table[k] = new node;
+		table[k]->key = ch;
+		return true;
+	}
+	if(nd->key == ch)
+		return false;
+	while(nd->next != NULL){
+		nd = nd->next;
+		if(nd->key == ch)		//already exist
+			return false;
+	}
+	nd->next = new node;
+	nd->next->key = ch;
+	return true;
+}
+
+void HashTable::del(char ch){
+	int k = ch % b;
+	node* nd = table[k];
+	while(nd != NULL){
+		if(nd->key == ch){
+			nd->key = -ch;
+			return;
+		}
+		nd = nd->next;
+	}
+}
+
+bool HashTable::check_once(char ch){	//check if ch appears only once
+	int k = ch % b;
+	node* nd = table[k];
+	while(nd != NULL){
+		if(nd->key == ch)			//exist once
+			return true;
+		if(nd->key == -ch)			//exist twice
+			return false;
+		nd = nd->next;
+	}
+	return false;					//not exist
+}
+
+void HashTable::init(){
+	table = new node*[b];
+	for(int i=0; i<b; i++)
+		table[i] = new node;
+}
+
+int main(){
+    FILE* fin = fopen("hash.in", "r");
+	FILE* fout = fopen("hash.out", "w");
+	int n;
+	fscanf(fin, "%d", &n);
+    for(int i=0; i<n; i++){
+		HashTable hash(8);
+    	char line[100];
+		memset(line, 0, 100);
+		int len;
+		fscanf(fin, "%s", line);
+		len = strlen(line);
+		for(int i=0; i<len; i++){
+			if(!hash.add(line[i]))
+				hash.del(line[i]);}
+		for(int i=0; i<len; i++){
+			if(hash.check_once(line[i])){
+				fprintf(fout, "%c\n", line[i]);
+				break;
+			}
+			if(i == len-1)
+				fprintf(fout, "None\n");
+		}
+	}
+	fclose(fin);
+	fclose(fout);
+    return 0;
+}

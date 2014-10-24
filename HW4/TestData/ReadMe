@@ -1,0 +1,3 @@
+Some statement for test data file "data":
+1.First line in the file denotes the number of test cases(there's only ONE number in this line).
+2.There's 3 numbers in 2nd to (n+1)th line, which means "M, N, K(max)".
