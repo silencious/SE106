@@ -1,0 +1,17 @@
+Name:   TianJiahe
+ID:     5130379056 
+
+Minimal Basic Interpreter
+
+I used a class Program to store the whole Basic program.
+The class mainly consist of a list of lines and a map of variables with all functions required.
+
+My program can pass all tests and fixed several bugs as below:
+
+Bugs fixed:
+1. If user enter an empty line, the program will not report "Segmentation Fault".(Unlike demo)
+2. If a variable use reserved words like "let", "print", then the program will report an error.(Unlike demo)
+3. If user add extra text(for example, %^&*^&) after a legal line, then the interpreter will throw syntax error.(Unlike demo)
+4. Support negative number in expressions.(Unlike demo)
+5. Support variable starts with alpha and has digit in it.(Unlike demo)
+

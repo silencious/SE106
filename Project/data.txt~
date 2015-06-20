@@ -1,0 +1,171 @@
+PartII: Performance.
+Stage1: Storing 10000 records.
+Takes 0.072462 seconds.
+
+Stage2: Fetching 10000 records.
+Takes 0.035041 seconds.
+
+Stage3: Complex test.
+Randomly read 50000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 0.273661 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Takes 0.490886 seconds.
+
+PartII: Performance.
+Stage1: Storing 20000 records.
+Takes 0.14548 seconds.
+
+Stage2: Fetching 20000 records.
+Takes 0.084817 seconds.
+
+Stage3: Complex test.
+Randomly read 100000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 0.603997 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Takes 1.10993 seconds.
+
+PartII: Performance.
+Stage1: Storing 40000 records.
+Takes 0.307575 seconds.
+
+Stage2: Fetching 40000 records.
+Takes 0.18088 seconds.
+
+Stage3: Complex test.
+Randomly read 200000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 1.30551 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Takes 2.42031 seconds.
+
+PartII: Performance.
+Stage1: Storing 80000 records.
+Takes 0.635706 seconds.
+
+Stage2: Fetching 80000 records.
+Takes 0.381304 seconds.
+
+Stage3: Complex test.
+Randomly read 400000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 2.76657 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Takes 5.16739 seconds.
+
+PartII: Performance.
+Stage1: Storing 160000 records.
+Takes 1.32984 seconds.
+
+Stage2: Fetching 160000 records.
+Takes 0.823899 seconds.
+
+Stage3: Complex test.
+Randomly read 800000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 5.79001 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Rebuilding Database.
+Takes 11.0581 seconds.
+
+PartII: Performance.
+Stage1: Storing 320000 records.
+Takes 2.68514 seconds.
+
+Stage2: Fetching 320000 records.
+Takes 1.69494 seconds.
+
+Stage3: Complex test.
+Randomly read 1600000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 11.9912 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Rebuilding Database.
+Takes 23.2731 seconds.
+
+PartII: Performance.
+Stage1: Storing 640000 records.
+Takes 5.81965 seconds.
+
+Stage2: Fetching 640000 records.
+Takes 3.57609 seconds.
+
+Stage3: Complex test.
+Randomly read 3200000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 25.0612 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Rebuilding Database.
+Takes 48.801 seconds.
+
+PartII: Performance.
+Stage1: Storing 960000 records.
+Takes 8.65057 seconds.
+
+Stage2: Fetching 960000 records.
+Takes 5.37757 seconds.
+
+Stage3: Complex test.
+Randomly read 4800000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 38.9452 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Rebuilding Database.
+Takes 75.3894 seconds.
+
+PartII: Performance.
+Stage1: Storing 1280000 records.
+Takes 11.559 seconds.
+
+Stage2: Fetching 1280000 records.
+Takes 7.63426 seconds.
+
+Stage3: Complex test.
+Randomly read 6400000 records,
+Randomly remove 1 record per 37 records,
+Randomly store and fetch 1 record per 11 records,
+Randomly replace 1 record per 17 records.
+Takes 53.1999 seconds.
+
+Stage4: Removing all records.
+Fetch 10 records for each removal.
+Rebuilding Database.
+Rebuilding Database.
+Rebuilding Database.
+Rebuilding Database.
+Takes 111.167 seconds.
+
+
